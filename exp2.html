@@ -1,0 +1,23 @@
+<body style="text-align:center;">
+
+	<h1 style="color:green;">
+		HELLO CLASS
+	</h1>
+
+	<p>
+		Passing function as arguments.
+	</p>
+
+	<button onclick="func_outer('SAVAN IS GREAT!', func_inner)">
+		Click Here
+	</button>
+
+	<script>
+        function func_outer(a, func){
+            alert(func(a));
+                }		
+		function func_inner(value){
+			return 'hello '+value;
+		}
+	</script>
+</body>

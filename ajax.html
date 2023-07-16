@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Ajax Demo</title>
+</head>
+<body>
+	<h2>Ajax Demo</h2>
+	<button type="button" onclick="loadContent()">Load Content</button>
+	<br><br>
+
+	<div id="msg"></div>
+	<script>
+		function loadContent() {
+			const xhr = new XMLHttpRequest();
+			xhr.onreadystatechange = function() {
+				if (this.readyState === 4 && this.status === 200) {
+					document.getElementById("msg").innerHTML = this.responseText;
+				}
+			};
+
+			xhr.open("GET", "https://jsonplaceholder.typicode.com/todos");
+			xhr.send();
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>jQuery Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <button id="myButton">Click me</button>
+  <div id="myMessage"></div>
+
+  <script>
+    $(document).ready(function() {
+      $('#myButton').click(function() {
+        $('#myMessage').text('Hello, world!');
+      });
+    });
+  </script>
+</body>
+</html>

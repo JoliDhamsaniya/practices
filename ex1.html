@@ -1,0 +1,23 @@
+<body style="text-align:center;">
+    <h1 style="color:green;">
+        WELCOME CLASS
+    </h1>
+  
+    <p>
+        Passing function as arguments.
+    </p>
+  
+    
+    <button onclick="func_outer(func_inner)">
+        Click Here
+    </button>
+  
+    <script>
+        function func_outer(func){
+            alert(func());
+        }
+        function func_inner(){
+            return 'hello User!';
+        }
+    </script>
+</body>
